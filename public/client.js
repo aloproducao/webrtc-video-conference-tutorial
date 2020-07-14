@@ -11,33 +11,13 @@ var roomNumber;
 var localStream;
 var remoteStream;
 var rtcPeerConnection;
-var iceServers = 
-     { 'urls': 'stun:stun.fwdnet.net' },
-         { 'urls': 'stun:stun.ekiga.net' },
-         { 'urls': 'stun:stun.ideasip.com' },
-         { 'urls': 'stun:stun.iptel.org' },
-         { 'urls': 'stun:stun.rixtelecom.se' },
-         { 'urls': 'stun:stun.schlund.de' },
-        
-        
-         { 'urls': 'stun:stunserver.org' },
-         { 'urls': 'stun:stun.softjoys.com' },
-         { 'urls': 'stun:stun.voiparound.com' },
-        
-         { 'urls': 'stun:stun.voipbuster.com' },
-         { 'urls': 'stun:stun.voipstunt.com' },
-         { 'urls': 'stun:stun.voxgratia.org' },
-        
-        
-        
-        
-        
-        
+var iceServers = {
+    'iceServers': [
+          { 'urls': 'stun:stun.voiparound.com' },
         { 'urls': 'stun:stun.services.mozilla.com' },
         { 'urls': 'stun:stun.l.google.com:19302' }
     ]
 }
-     
 var streamConstraints = { audio: true, video: true };
 var isCaller;
 
