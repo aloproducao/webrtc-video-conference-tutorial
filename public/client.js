@@ -11,8 +11,7 @@ var roomNumber;
 var localStream;
 var remoteStream;
 var rtcPeerConnection;
-var iceServers = {
-    'iceServers': [
+var iceServers = 
      { 'urls': 'stun:stun.fwdnet.net' },
          { 'urls': 'stun:stun.ekiga.net' },
          { 'urls': 'stun:stun.ideasip.com' },
