@@ -18,10 +18,7 @@ var iceServers = {
         { 'urls': 'stun:stun.l.google.com:19302' }
     ]
 }
-var streamConstraints = { audio: true, video: true,
-                                                  { width:  min: 427, ideal: 1280, max: 1920 },
-    { height:  min: 240, ideal: 720, max: 1080 }
-                        };
+var streamConstraints = { audio: true, video: { height: min: 240, ideal: 720, max: 1080, width: min: 427, ideal: 1280, max: 1920 } };
                          
                          
 var isCaller;
