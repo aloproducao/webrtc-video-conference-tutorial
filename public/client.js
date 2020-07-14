@@ -16,11 +16,37 @@ let rtcPeerConnections = {};
 // constants
 const iceServers = {
   iceServers: [
-    { urls: "stun:stun.services.mozilla.com" },
+    { urls: 'stun:stun.services.mozilla.com', 
+     'stun:stun.ekiga.net',
+    'stun:stun.fwdnet.net',
+    'stun:stun.ideasip.com',
+    'stun:stun.iptel.org',
+    'stun:stun.rixtelecom.se',
+    'stun:stun.schlund.de',
+    'stun:stunserver.org',
+    'stun:stun.softjoys.com',
+'stun:stun.voiparound.com',
+'stun:stun.voipbuster.com',
+'stun:stun.voipstunt.com',
+'stun:stun.voxgratia.org',
+    'stun:stun.xten.com',
+         'stun:stun.xten.com',
+        'stun:stun.l.google.com:19302',
+        'stun:stun1.l.google.com:19302',
+        'stun:stun2.l.google.com:19302',
+        'stun:stun.l.google.com:19302?transport=udp'},
     { urls: "stun:stun.l.google.com:19302" },
   ],
 };
-const streamConstraints = { audio: false, video: { height: 480 } };
+const streamConstraints = { audio: true, video:true};
+connection.mediaConstraints = {
+    audio: true,
+    video: true,
+    
+    video: {
+    width: { min: 427, ideal: 1280, max: 1920 },
+    height: { min: 240, ideal: 720, max: 1080 }
+  }
 
 // Let's do this 💪
 var socket = io();
