@@ -13,27 +13,27 @@ var remoteStream;
 var rtcPeerConnection;
 var iceServers = {
     'iceServers': [
-                {
-    'urls':
+     { 'urls': 'stun:stun.fwdnet.net' },
+         { 'urls': 'stun:stun.ekiga.net' },
+         { 'urls': 'stun:stun.ideasip.com' },
+         { 'urls': 'stun:stun.iptel.org' },
+         { 'urls': 'stun:stun.rixtelecom.se' },
+         { 'urls': 'stun:stun.schlund.de' },
         
-    'stun:stun.ekiga.net',
-    'stun:stun.fwdnet.net',
-    'stun:stun.ideasip.com',
-    'stun:stun.iptel.org',
-    'stun:stun.rixtelecom.se',
-    'stun:stun.schlund.de',
-    'stun:stunserver.org',
-    'stun:stun.softjoys.com',
-'stun:stun.voiparound.com',
-'stun:stun.voipbuster.com',
-'stun:stun.voipstunt.com',
-'stun:stun.voxgratia.org',
-    'stun:stun.xten.com',
-         'stun:stun.xten.com',
-        'stun:stun.l.google.com:19302',
-        'stun:stun1.l.google.com:19302',
-        'stun:stun2.l.google.com:19302',
-        'stun:stun.l.google.com:19302?transport=udp'},
+        
+         { 'urls': 'stun:stunserver.org' },
+         { 'urls': 'stun:stun.softjoys.com' },
+         { 'urls': 'stun:stun.voiparound.com' },
+        
+         { 'urls': 'stun:stun.voipbuster.com' },
+         { 'urls': 'stun:stun.voipstunt.com' },
+         { 'urls': 'stun:stun.voxgratia.org' },
+        
+        
+        
+        
+        
+        
         { 'urls': 'stun:stun.services.mozilla.com' },
         { 'urls': 'stun:stun.l.google.com:19302' }
     ]
