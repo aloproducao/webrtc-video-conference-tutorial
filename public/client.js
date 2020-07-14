@@ -18,7 +18,7 @@ var iceServers = {
         { 'urls': 'stun:stun.l.google.com:19302' }
     ]
 }
-var streamConstraints = { audio: true, video: { width:1280 } };
+var streamConstraints = { audio: true, video: { width:1280 } { height:720 }};
                          
                          
 var isCaller;
