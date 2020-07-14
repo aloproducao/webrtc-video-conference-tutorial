@@ -13,12 +13,16 @@ var remoteStream;
 var rtcPeerConnection;
 var iceServers = {
     'iceServers': [
+         { 'urls': 'stun:stunserver.org' },
           { 'urls': 'stun:stun.voiparound.com' },
         { 'urls': 'stun:stun.services.mozilla.com' },
         { 'urls': 'stun:stun.l.google.com:19302' }
     ]
 }
-var streamConstraints = { audio: true, video: { width:1280 height:720 };
+var streamConstraints = { audio: true, 
+                         
+                         
+                        video:true ;
                          
                          
 var isCaller;
