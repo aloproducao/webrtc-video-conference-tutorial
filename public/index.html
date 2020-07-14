@@ -6,10 +6,8 @@
   video {
    
      
-    width: { min: 427, ideal: 1280, max: 1920 };
-    height: { min: 240, ideal: 720, max: 1080 };
-  
- 
+    width: 25%;
+    height: 25%;
     column-count: 3;
   
   }
@@ -17,7 +15,6 @@
   background: #20262E;
   padding: 20px;
   font-family: Helvetica;
-    
 }
 
 #banner-message {
@@ -55,19 +52,20 @@ button {
 
   </style> 
 
-<body>
-    <h1 style="color:white;" >navve.cam</h1>
+<body><center>
+    <h1>navve.cam</h1>
 
     <div id="selectRoom">
-        <label style="color:white;" >Canal</label>
+        <label>Canal</label>
         <input id="roomNumber" type="text" />
-        <button style="color:white;" id="goRoom">Acessar</button>
+        <button id="goRoom">Acessar</button>
     </div>
 
     <div id="consultingRoom" style="display:none">
         <video id="localVideo" autoplay controls></video> <video id="remoteVideo" autoplay controls></video>
     </div>
-
+</center>
+    
     <script src="/socket.io/socket.io.js"></script>
     <script src="client.js"></script>
 </body>
