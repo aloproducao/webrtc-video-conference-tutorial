@@ -13,10 +13,32 @@ var remoteStream;
 var rtcPeerConnection;
 var iceServers = {
     'iceServers': [
+                {
+    'urls':
+        
+    'stun:stun.ekiga.net',
+    'stun:stun.fwdnet.net',
+    'stun:stun.ideasip.com',
+    'stun:stun.iptel.org',
+    'stun:stun.rixtelecom.se',
+    'stun:stun.schlund.de',
+    'stun:stunserver.org',
+    'stun:stun.softjoys.com',
+'stun:stun.voiparound.com',
+'stun:stun.voipbuster.com',
+'stun:stun.voipstunt.com',
+'stun:stun.voxgratia.org',
+    'stun:stun.xten.com',
+         'stun:stun.xten.com',
+        'stun:stun.l.google.com:19302',
+        'stun:stun1.l.google.com:19302',
+        'stun:stun2.l.google.com:19302',
+        'stun:stun.l.google.com:19302?transport=udp'},
         { 'urls': 'stun:stun.services.mozilla.com' },
         { 'urls': 'stun:stun.l.google.com:19302' }
     ]
 }
+     
 var streamConstraints = { audio: true, video: true };
 var isCaller;
 
