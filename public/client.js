@@ -20,7 +20,7 @@ const iceServers = {
     { urls: "stun:stun.l.google.com:19302" },
   ],
 };
-const streamConstraints = { audio: false, video: { height: 480 } };
+ const streamConstraints = { audio: true, video: {width:1280, height:720 } };
 
 // Let's do this 💪
 var socket = io();
@@ -45,7 +45,7 @@ btnJoinBroadcaster.onclick = function () {
         socket.emit("register as broadcaster", user.room);
       })
       .catch(function (err) {
-        console.log("An error ocurred when accessing media devices", err);
+        console.log("Erro ao acessar a camera", err);
       });
   }
 };
