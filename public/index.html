@@ -5,14 +5,30 @@
 </head>
 <style type="text/css">
   video {
-  height: 25%;
-    width: 25%;
+  
+  width: 70%;
+
+left: 50%;
+position: absolute;
+transform: translateX(-50%);
   
   }
+  #broadcasterName {
+  }
+
+    #selectRoom {
+  width: 70%;
+  }
+
   body {
   background: #20262E;
   padding: 20px;
   font-family: Helvetica;
+
+}
+
+.selectRoom {
+  font-color: white;
 }
 
 #banner-message {
@@ -54,12 +70,14 @@ button {
     <h1>navve.cam</h1>
 
     <div id="selectRoom">
-        <label for="name">Nome</label>
+        <label for="name">Nome </label>
         <input id="name" type="text" />
-        <label for="roomNumber">CANAL</label>
-        <input id="roomNumber" type="text" />
-        <button id="joinBroadcaster">Transmitir</button>
-        <button id="joinViewer">Assistir</button>
+        <div> &nbsp; </div>
+      
+      <div>  <label for="roomNumber">CANAL</label>
+        <input id="roomNumber" type="text" /></div>
+       <div> <button id="joinBroadcaster">Transmitir</button>     
+       <button id="joinViewer">Assistir</button> </div>
     </div>
     </center>
     <div id="consultingRoom" style="display:none">
