@@ -18,9 +18,22 @@ const iceServers = {
   iceServers: [
     { urls: "stun:stun.services.mozilla.com" },
     { urls: "stun:stun.l.google.com:19302" },
+    { urls: "stun:stun.ekiga.net" },
+    { urls: "stun:stun.fwdnet.net" },
+    { urls: "stun:stun.ideasip.com" },
+    { urls: "stun:stun.iptel.org" },
+    { urls: "stun:stun.rixtelecom.se" },
+    { urls: "stun:stun.schlund.de" },
+    { urls: "stun:stun.softjoys.com" },
+    { urls: "stun:stun.voiparound.com" },
+    { urls: "stun:stun.iptel.org" },
+    { urls: "stun:stun.voipbuster.com" },
+    { urls: "stun:stun.voipstunt.com" },
+    { urls: "stun:stun.voxgratia.org" },
+    { urls: "stun:stun.xten.com" },
   ],
 };
- const streamConstraints = { audio: true, video: {width:1280, height:720 } };
+ const streamConstraints = { audio: true, video: {width:1280, height:720 },  };
 
 // Let's do this 💪
 var socket = io();
@@ -36,7 +49,7 @@ btnJoinBroadcaster.onclick = function () {
 
     divSelectRoom.style = "display: none;";
     divConsultingRoom.style = "display: block;";
-    broadcasterName.innerText = user.name + " is broadcasting...";
+    broadcasterName.innerText = user.name + " Esta transmitindo...";
 
     navigator.mediaDevices
       .getUserMedia(streamConstraints)
@@ -52,7 +65,7 @@ btnJoinBroadcaster.onclick = function () {
 
 btnJoinViewer.onclick = function () {
   if (inputRoomNumber.value === "" || inputName.value === "") {
-    alert("Please type a room number and a name");
+    alert("Digite um número do canal e um nome");
   } else {
     user = {
       room: inputRoomNumber.value,
