@@ -16,7 +16,7 @@ let rtcPeerConnections = {};
 // constants
 const iceServers = {
   iceServers: [
-        { urls: "stun:stun.navve.tv:5349" },
+      { urls: "stun:stun.navve.tv:5349" },
       
     { urls: "stun:stun.services.mozilla.com" },
     { urls: "stun:stun.l.google.com:19302" },
@@ -51,10 +51,8 @@ const iceServers = {
     { urls: "stun:stun.cnj.jus.br:3478" },
 
     { urls: "stun:stun.palava.tv:3478" },
+   
   ]
-  
-};
-  ],
 };
  const streamConstraints = { audio: true, video: {width:1280, height:720 },  };
 
