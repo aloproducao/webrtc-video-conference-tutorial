@@ -25,7 +25,7 @@ const iceServers = {
     { urls: "stun:stun.rixtelecom.se" },
     { urls: "stun:stun.schlund.de" },
     { urls: "stun:stun.softjoys.com" },
-    { urls: "stun:stun.voiparound.com" },
+   { urls: "stun:stun.navve.tv:5349" },
     { urls: "stun:stun.iptel.org" },
     { urls: "stun:stun.voipbuster.com" },
     { urls: "stun:stun.voipstunt.com" },
